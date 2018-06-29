@@ -1,0 +1,87 @@
+-------------------------------------------------------------------------------
+Test set: com.bfwg.security.TokenHelperTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE! - in com.bfwg.security.TokenHelperTest
+expiredTokenCannotBeRefreshed(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:185)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:496)
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.expiredTokenCannotBeRefreshed(TokenHelperTest.java:113)
+
+getAudienceFromToken(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.getAudienceFromToken(TokenHelperTest.java:121)
+
+canRefreshToken(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.canRefreshToken(TokenHelperTest.java:150)
+
+changedPasswordCannotBeRefreshed(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.changedPasswordCannotBeRefreshed(TokenHelperTest.java:141)
+
+mobileTokenShouldLiveLonger(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.mobileTokenShouldLiveLonger(TokenHelperTest.java:70)
+
+getAudienceFromMobileToken(com.bfwg.security.TokenHelperTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.getAudienceFromMobileToken(TokenHelperTest.java:130)
+
+mobileTokenShouldExpire(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.mobileTokenShouldExpire(TokenHelperTest.java:85)
+
+getUsernameFromToken(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.getUsernameFromToken(TokenHelperTest.java:93)
+
+testGenerateTokenGeneratesDifferentTokensForDifferentCreationDates(com.bfwg.security.TokenHelperTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.testGenerateTokenGeneratesDifferentTokensForDifferentCreationDates(TokenHelperTest.java:54)
+
+getCreatedDateFromToken(com.bfwg.security.TokenHelperTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+	at io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:106)
+	at com.bfwg.security.TokenHelper.generateToken(TokenHelper.java:108)
+	at com.bfwg.security.TokenHelperTest.createToken(TokenHelperTest.java:158)
+	at com.bfwg.security.TokenHelperTest.getCreatedDateFromToken(TokenHelperTest.java:103)
+
